@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Budget Buddy</title>
+        <link rel ="icon" type="image/png" href="images/favicon-cash.png">
+    </head>
+
+    <body>
+        <div class="top">
+            <div class="budget">
+                <div class="budget_title">
+                    <h1 style="font-family: 'Kaushan Script', cursive;">expense tracker</h1>
+                    <br>
+                    <p>Available Budget in <span class="budget_title_month">%Month%</span>:</p>
+                </div>
+                
+                <div class="budget_value">0.00</div>
+                
+                <div class="budget_income clearfix">
+                    <div class="budget_income_text">Income</div>
+                    <div class="right">
+                        <div class="budget_income_value">+ 0.00</div>
+                    </div>
+                </div>
+                
+                <div class="budget_expenses clearfix">
+                    <div class="budget_expenses_text">Expenses</div>
+                    <div class="right clearfix">
+                        <div class="budget_expenses_value">- 0.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom">
+            <div class="add">
+                <div class="add_container">
+                    <input type="number" class="add_date" min="1" max="31" placeholder="Date">
+                    <input type="text" class="add_description" placeholder="Add description">
+                    <input type="number" class="add_value" placeholder="Value">
+                    <button class="add_btn" onclick="addTransaction()"><i class="ion-ios-checkmark-outline"></i></button>
+                </div>
+            </div>
+            
+            <div class="container clearfix">
+                <div class="income">
+                    <h2 class="icome_title">Income</h2>
+                    <div class="income_list">                        
+                    </div>
+                </div>
+                
+                <div class="expenses">
+                    <h2 class="expenses_title">Expenses</h2>
+                    <div class="expenses_list">                        
+                    </div>
+                </div>
+            </div>       
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
